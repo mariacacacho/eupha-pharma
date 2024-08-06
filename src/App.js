@@ -2,16 +2,20 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
+import { HeaderContainer, ContentContainer, FooterContainer } from './styles/Layout.style'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <div>
-      <h1>Routes</h1>
-      <Routes>
-        <Route path='/' element={<Layout />}>
+      <Header />
+      <ContentContainer>
+        <Routes>
           <Route path='/' element={<Home />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </ContentContainer>
+      <Footer />
     </div>
   )
 }

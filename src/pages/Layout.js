@@ -1,15 +1,21 @@
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, Link } from 'react-router-dom'
+import { LayoutContainer, HeaderContainer, ContentContainer, FooterContainer } from '../styles/Layout.style'
+import Home from './Home'
 
 const Layout = () => {
-    return <div>
-        <nav>
-            <li>
-                <Link to='/'>Home</Link>
-            </li>
-        </nav>
-        <hr />
+    return (
+      <LayoutContainer>
+        <HeaderContainer>
+          <p>1</p>
+        </HeaderContainer>
+        <ContentContainer>
+          <Home />
+        </ContentContainer>
+        <FooterContainer>
+          <p>3</p>
+        </FooterContainer>
         <Outlet />
-    </div>
+      </LayoutContainer>)
 }
 
 export default Layout
