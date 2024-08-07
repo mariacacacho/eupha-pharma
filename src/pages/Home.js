@@ -1,5 +1,14 @@
+import HeroImage from '../components/HeroImage/HeroImage'
+import Lines from '../components/Lines/Lines'
+import { HomeContainer } from '../styles/Layout.style'
+
 const Home = () => {
-    return <h1>Content</h1>
+    return(
+      <HomeContainer>
+       <HeroImage />
+       <Lines />
+      </HomeContainer>
+    )
 }
 
 export default Home

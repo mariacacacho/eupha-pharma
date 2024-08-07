@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const LogoContainer = styled.div`
-  padding: 0 0 0 100px;
+  padding: 32px 0 0 100px;
   background-color: #FFFFFF;
   img{
-    width: 100px;
+    width: 120px;
   }
 `
 
@@ -14,7 +14,7 @@ export const MenuContainer = styled.div`
   color: white;
   grid-template-columns: 90% 10%;
   align-items: center;
-  padding: 0 100px 0 30px;
+  padding: 32px 100px 0 30px;
 `
 
 export const MenuItems = styled.div`
@@ -46,8 +46,9 @@ export const MenuItem = styled.div`
 
 export const SignInContainer = styled.div`
   height: 25px;
-  display: grid;
+  display: flex;
   align-items: center;
+  font-size: 1.3em;
 
   div{
     border: 1px solid white;
